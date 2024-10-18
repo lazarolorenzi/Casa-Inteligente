@@ -56,7 +56,7 @@ Antes de iniciar, certifique-se de ter os seguintes itens prontos:
         Serial.print(".");
       }
       Serial.println("
-Conectado ao Wi-Fi!");
+    Conectado ao Wi-Fi!");
       Serial.print("Endereço IP: ");
       Serial.println(WiFi.localIP());
 
@@ -82,7 +82,7 @@ Conectado ao Wi-Fi!");
           digitalWrite(ledPins[led], state);
           server.send(200, "text/plain", "LED atualizado com sucesso");
           Serial.printf("LED %d %s
-", led + 1, state ? "ligado" : "desligado");
+    ", led + 1, state ? "ligado" : "desligado");
         } else {
           server.send(400, "text/plain", "Parâmetros inválidos");
         }
